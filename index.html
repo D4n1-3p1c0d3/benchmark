@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Benchmark Test Epicode 2024</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <header>
+            <img src="assets/epicode_logo.png" alt="Epicode Logo">
+        </header>
+        <main>
+            <section id="welcome" style="display: block;">
+                <h1>Benvenuto al <br><strong>tuo esame</strong></h1>
+                <h2>Istruzioni</h2>
+                <p>Non ci aspettiamo che sappiate tutte le risposte, ma che vi facciate le domande giuste!<br><strong>Il cucchiaio non esiste!</strong></p>
+                <ul>
+                    <li>Hai <strong>un minuto</strong> per dare ogni risposta, e <strong>non si torna indietro!</strong></li>
+                    <li>Se esci con la freccia fuori da questa pagina, il test si interromperà e <strong>non sarà valido</strong>.</li>
+                    <li>Buona fortuna!</li>
+                </ul>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Inserisci il tuo nome" required>
+                    <br>
+                    <label for="privacy">Privacy</label>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                    <span>Accetto a mio rischio e pericolo</span>
+                    <br>
+                    <input type="button" id="start" value="Cominciamo" onclick="letsGo()">
+                </form>
+            </section>
+            <section id="primoLayout" style="display: none;">
+                <div id="domanda">
+                    <h3>Domanda #1</h3>
+                    <div id="timer">
+                        
+                    </div>
+                </div>
+                <div id="risposte">
+                </div>
+                <div id="valutazioneDomanda">
+                </div>
+                <div id="riepilogo">
+                    <h4>Domanda <span id="corrente" onclick="results()">1</span> di <span id="totDomande">4</span></h4>
+                </div>
+            </section>
+            <section id="risultato" style="display: none;">
+                <div id="responso">
+                    <h3>Risultato</h3>
+                    <div id="datiStudente">
+                        
+                    </div>
+                </div>
+                <div id="immagineFinale"></div>
+                <div id="listaRisposte" style="display: none;">
+                    <div id="chiudiPopup" onclick="nascondiReport()">
+                        <div>X</div>    
+                    </div>
+                    <ul id = "lista">
+                        
+                    </ul>
+                </div>
+                <div id="ritorna">
+                    <h5 id="commentoFinale">Frase di circostanza</h5>
+                    <button class="btalt" onclick="guardaReport()">Guarda il Report</button>
+                    <button onclick="doItAgain()">Reset</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>© 2024 Bla Bla Bla</p>
+            </div>
+            
+        </footer>
+    </div>
+    <div id="fatalError" style="display: none;">
+        <div>
+            <h5>Errore Fatale</h5>
+            <p id="problema">causa dell'errore</p>
+            <button onclick="ricarica()">Ricarica</button>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

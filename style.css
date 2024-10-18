@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 25px auto;;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #D20094;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.5rem;
+    
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+#mainContainer {
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 60px;
+    padding: 20px 0;
+}
+
+header img {
+    height: 60px;
+}
+
+#welcome form {
+    position: relative;
+    margin: 40px auto;
+}
+
+#welcome label {
+    display: none;
+}
+
+#welcome h2 {
+    margin: 0 auto;
+}
+
+#nome {
+    min-width: 310px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#start {
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #00ffff;
+    width: 250px;
+    height: 55px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#start:hover, #ritorna button:hover {
+    box-shadow: #00ffff 0px 0px 10px;
+}
+
+/* Layout a 4 risposte chiuse */
+
+#primoLayout, #risultato {
+    margin-top: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    position: relative;
+}
+
+#domanda {
+    text-align: center;
+
+}
+
+#timer {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    font-size: 3em;
+    font-weight: 900;
+
+}
+
+#risposte {
+    display: flex;
+    max-width: 650px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#risposte button {
+    background-color: rgba(10, 40, 40, 0.5);
+    color: white;
+    width: 250px;
+    height: 55px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 30px auto;
+    box-shadow: #00ffff 0px 0px 10px;
+}
+
+#risposte button:hover {
+    background-color: #D20094;;
+}
+
+#riepilogo {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+#corrente {
+    color:#D20094;
+    font-weight: 700;
+    text-shadow: #ffffff 0px 0px 12px;
+}
+
+#valutazioneDomanda {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+footer div {
+    text-align: center;
+}
+
+#responso h3 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#datiStudente {
+    max-width: 750px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;;
+}
+
+#chiudiPopup {
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#chiudiPopup:hover {
+    background-color: #D20094;
+}
+
+#chiudiPopup div {
+    margin-top: 1px;
+    font-weight: 900;
+}
+
+#listaRisposte {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+#listaRisposte ul {
+    border: solid 1px white;
+    border-radius: 15px;
+    padding:12px;
+    background-color: rgba(36, 4, 43, 0.95);
+}
+
+#listaRisposte ul li {
+    list-style: none;
+    padding: 4px;
+    font-size: 14px;
+}
+
+
+#listaRisposte ul li div {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#listaRisposte ul li div:nth-child(1) {
+    width: 5%;
+}
+
+#listaRisposte ul li div:nth-child(2) {
+    width: 53%;
+}
+#listaRisposte ul li div:nth-child(3) {
+    width: 25%;
+}
+#listaRisposte ul li div:nth-child(4) {
+    width: 5%;
+}
+
+#ritorna {
+    text-align: center;
+}
+
+#ritorna h5 {
+    margin: 20px auto;
+}
+
+#ritorna button {
+    background-color: #00ffff;
+    width: 250px;
+    height: 55px;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btalt {
+    background-color: #D20094!important;
+}
+
+#immagineFinale {
+    text-align: center;
+}
+
+#immagineFinale img {
+    width: 530px;
+}
+
+#fatalError {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/voti/fatalerror.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#fatalError div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    margin: 10px auto;
+    padding:20px;
+    text-align: center;
+}
+
+#fatalError div h5 {
+    margin: 0;
+}
+
+#fatalError div button {
+    background-color: rgba(10, 40, 40, 0.5);
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px auto;
+    box-shadow: #ff0048 0px 0px 10px;
+}
